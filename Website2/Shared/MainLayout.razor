@@ -1,0 +1,20 @@
+﻿@inherits LayoutComponentBase
+<TelerikRootComponent>
+    <BlazoredToasts Position="ToastPosition.BottomCenter"
+                    Timeout="4"
+                    SuccessClass="success-toast-override"
+                    SuccessIcon="fa fa-thumbs-up"
+                    ErrorIcon="fa fa-bug"
+                    IconType="IconType.FontAwesome" />
+
+   <BlazoredModal />
+   <RedirectToLogin/>
+        <div class="sidebar">
+            <NavMenu />
+        </div>
+        <div class="main">
+            <div class="content px-4">
+                @Body
+            </div>
+        </div>
+ </TelerikRootComponent>

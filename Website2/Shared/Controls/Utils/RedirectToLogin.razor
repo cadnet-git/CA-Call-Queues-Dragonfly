@@ -1,0 +1,19 @@
+﻿@inject NavigationManager Navigation
+@inject UserService  UserService
+@code {
+
+    protected override void OnInitialized()
+    {
+
+        UserService.ClearActiveUser();
+
+        String thisPage = Navigation.Uri.Replace(Navigation.BaseUri, "");
+        Console.WriteLine($"Redirecting to : {thisPage}");
+        if (thisPage.ToLower() != "login/")
+        {
+            Navigation.NavigateTo($"login/{thisPage}");
+        }
+
+        base.OnInitialized();
+    }
+}

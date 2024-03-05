@@ -1,0 +1,12 @@
+﻿@page "/login"
+@page "/login/{returnUrl}"
+<h1>Login</h1>
+@returnUrl
+
+@code {
+
+    [Parameter] public String returnUrl { get; set; }
+
+
+
+}

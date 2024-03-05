@@ -1,0 +1,39 @@
+﻿@inject UserService UserService
+@inject IModalService Modal
+<button @onclick="ButtonClick" >click</button>
+@code {
+
+
+    private async Task ButtonClick()
+    {
+        await ShowLogin();
+    }
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await ShowLogin();
+        base.OnAfterRenderAsync(firstRender);
+    }
+
+
+
+    public async Task<bool> ShowLogin()
+    {
+        var formModal = Modal.Show<LogonControl>("Please Login");
+        var result = await formModal.Result;
+
+        if (result.Cancelled)
+        {
+            Console.WriteLine("Modal was cancelled");
+            return false;
+        }
+        else
+        {
+            Console.WriteLine(result.Data);
+            return true;
+        }
+
+    }
+
+}

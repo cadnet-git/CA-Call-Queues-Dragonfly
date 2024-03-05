@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="Agent_PostcodeAnywhere_LookupUK" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://services.postcodeanywhere.co.uk/uk/lookup.asmx</Value>
+    </Setting>
+    <Setting Name="Agent_tpscleanws_TPSClean" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://tpscleanws.azurewebsites.net/tpsclean.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

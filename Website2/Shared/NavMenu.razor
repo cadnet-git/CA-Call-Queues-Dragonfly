@@ -1,0 +1,87 @@
+﻿@inject NavigationManager NavigationManager
+@inject UserService  UserService
+<div class="top-row pl-4 navbar navbar-dark">
+    <a class="navbar-brand" href="">CA Healthcare</a>
+    <button class="navbar-toggler" @onclick="ToggleNavMenu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+@if (UserService.ActiveUser != null)
+{
+<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
+    <ul class="nav flex-column">
+        <li style=" margin: 20px;">
+            <TelerikCalendar View="CalendarView.Month"
+                             SelectionMode="@CalendarSelectionMode.Single"
+                             @bind-Value="SelectedDate">
+            </TelerikCalendar>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" style="color:white;" @onclick="ThisWeek">
+                <span class="oi oi-home" aria-hidden="true"></span>This Week
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="Feedback">
+                <span class="oi oi-plus" aria-hidden="true"></span> Awaiting Feedback
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="Pending">
+                <span class="oi oi-list-rich" aria-hidden="true"></span>Pending Appontments
+            </NavLink>
+        </li>
+    </ul>
+</div>
+}
+@code {
+    bool collapseNavMenu = true;
+
+    string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+
+    DateTime selectedDate = DateTime.Now;
+    DateTime MondayDate = DateTime.Now;
+    public DateTime SelectedDate
+    {
+        get
+        {
+            return selectedDate;
+        }
+        set
+        {
+
+            selectedDate = value;
+            MondayDate = GetMonday(selectedDate);
+
+        }
+    }
+
+    int diff = 0;
+
+    private DateTime GetMonday(DateTime date)
+    {
+        var culture = System.Threading.Thread.CurrentThread.CurrentCulture;
+        diff = date.DayOfWeek - culture.DateTimeFormat.FirstDayOfWeek;
+        if (diff > 4)
+        {
+            return date.AddDays(7 - diff).Date;
+        }
+        else
+        {
+            return date.AddDays(-diff).Date;
+        }
+    }
+
+
+    private void ThisWeek()
+    {
+        SelectedDate = DateTime.Now;
+    }
+
+
+}

@@ -1,0 +1,1113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="12.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB94FBC0-83CE-489F-B89F-F20116EF8540}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>CADNet.CallQueues.ManagerConsole.My.MyApplication</StartupObject>
+    <RootNamespace>CADNet.CallQueues.ManagerConsole</RootNamespace>
+    <AssemblyName>Manager Console</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>CallQueues.snk</AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <PublishUrl>http://localhost/Management Client/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Manager Console.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Manager Console.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="CallRecorder">
+      <HintPath>..\CallRecorder\bin\Debug\CallRecorder.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v19.1.Export, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Docs.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.SpellChecker.v19.1.Core, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Images.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpellChecker.v19.1, Version=19.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="CADNet.CallQueues.ManagerConsole" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Areas\frmAreas.Designer.vb">
+      <DependentUpon>frmAreas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\frmAreas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\cCallbackStats.vb" />
+    <Compile Include="Classes\PostcodeFix.vb" />
+    <Compile Include="Controls\ctlManagerDiaryCell.Designer.vb">
+      <DependentUpon>ctlManagerDiaryCell.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctlManagerDiaryCell.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DataImport2\frmImportTPS.Designer.vb">
+      <DependentUpon>frmImportTPS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataImport2\frmImportTPS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataImport2\frmNewData.Designer.vb">
+      <DependentUpon>frmNewData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataImport2\frmNewData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddFile.designer.vb">
+      <DependentUpon>frmAddFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangeGroupCompany.Designer.vb">
+      <DependentUpon>frmChangeGroupCompany.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangeGroupCompany.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDocuments.Designer.vb">
+      <DependentUpon>frmDocuments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDocuments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFixPostcodes.Designer.vb">
+      <DependentUpon>frmFixPostcodes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFixPostcodes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGetConsent.Designer.vb">
+      <DependentUpon>frmGetConsent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGetConsent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportHistory.Designer.vb">
+      <DependentUpon>frmImportHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmImportHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSearch2.Designer.vb">
+      <DependentUpon>frmSearch2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSearch2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetEmailPassword.designer.vb">
+      <DependentUpon>FrmSetEmailPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetEmailPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoPoints\frmInformationPoints.Designer.vb">
+      <DependentUpon>frmInformationPoints.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InfoPoints\frmInformationPoints.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageBook\frmBook.Designer.vb">
+      <DependentUpon>frmBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManageBook\frmBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmCallbackStats.Designer.vb">
+      <DependentUpon>frmCallbackStats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmCallbackStats.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmCancelledReport.Designer.vb">
+      <DependentUpon>frmCancelledReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmCancelledReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRecordAllocation.Designer.vb">
+      <DependentUpon>frmRecordAllocation.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRecordAllocation.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmSurveySummary.Designer.vb">
+      <DependentUpon>frmSurveySummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmSurveySummary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\frmManageProvierList.Designer.vb">
+      <DependentUpon>frmManageProvierList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\frmManageProvierList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cAgentStats.vb" />
+    <Compile Include="Classes\AppointmentStats.vb" />
+    <Compile Include="Classes\AppointmentStatsNew.vb" />
+    <Compile Include="Classes\AppointmentStatsNewHeader.vb" />
+    <Compile Include="Controls\ctlEventsDayView.Designer.vb">
+      <DependentUpon>ctlEventsDayView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ctlEventsDayView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="frmChangeAddress.Designer.vb">
+      <DependentUpon>frmChangeAddress.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangeAddress.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckNotinterested.Designer.vb">
+      <DependentUpon>frmCheckNotinterested.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheckNotinterested.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfirmPostcode.Designer.vb">
+      <DependentUpon>frmConfirmPostcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfirmPostcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGetPostcode.Designer.vb">
+      <DependentUpon>frmGetPostcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmGetPostcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\frmLocationFixer.Designer.vb">
+      <DependentUpon>frmLocationFixer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\frmLocationFixer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMultiRepDiaryEntry.Designer.vb">
+      <DependentUpon>frmMultiRepDiaryEntry.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmMultiRepDiaryEntry.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LegacyImport\frmCheckImport.Designer.vb">
+      <DependentUpon>frmCheckImport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LegacyImport\frmCheckImport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmAgentApps.Designer.vb">
+      <DependentUpon>frmAgentApps.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmAgentApps.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmAgentPerformance.Designer.vb">
+      <DependentUpon>frmAgentPerformance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmAgentPerformance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmAgentStatsTimeFrame.Designer.vb">
+      <DependentUpon>frmAgentStatsTimeFrame.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmAgentStatsTimeFrame.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAgentWatcher.Designer.vb">
+      <DependentUpon>frmAgentWatcher.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAgentWatcher.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSelectUser.Designer.vb">
+      <DependentUpon>frmSelectUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSelectUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShowCompany.Designer.vb">
+      <DependentUpon>frmShowCompany.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmShowCompany.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmAgenttoCompanyStats.Designer.vb">
+      <DependentUpon>frmAgenttoCompanyStats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmAgenttoCompanyStats.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmAgentActivity.Designer.vb">
+      <DependentUpon>frmAgentActivity.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmAgentActivity.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FrmAreaStats.Designer.vb">
+      <DependentUpon>FrmAreaStats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FrmAreaStats.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Areas\frmNewArea.Designer.vb">
+      <DependentUpon>frmNewArea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\frmNewArea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Areas\frmNewPostcode.Designer.vb">
+      <DependentUpon>frmNewPostcode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Areas\frmNewPostcode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classes\cArea.vb" />
+    <Compile Include="Classes\cAreas.vb" />
+    <Compile Include="Classes\cDesk.vb" />
+    <Compile Include="Classes\cManagerApp.vb" />
+    <Compile Include="Classes\cPostCode.vb" />
+    <Compile Include="Classes\cPostCodes.vb" />
+    <Compile Include="DataImport\frmCompanyImport.Designer.vb">
+      <DependentUpon>frmCompanyImport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataImport\frmCompanyImport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataImport\frmEditImport.Designer.vb">
+      <DependentUpon>frmEditImport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DataImport\frmEditImport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeskControls\DeskRowControl.Designer.vb">
+      <DependentUpon>DeskRowControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeskControls\DeskRowControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Desks\frmDeskManager.Designer.vb">
+      <DependentUpon>frmDeskManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Desks\frmDeskManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiariesManager\DiaryListItem.Designer.vb">
+      <DependentUpon>DiaryListItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DiariesManager\DiaryListItem.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DiariesManager\DiaryListView.Designer.vb">
+      <DependentUpon>DiaryListView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DiariesManager\DiaryListView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DiariesManager\frmCompanyCreate.Designer.vb">
+      <DependentUpon>frmCompanyCreate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DiariesManager\frmCompanyCreate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiariesManager\frmCompanyFind.Designer.vb">
+      <DependentUpon>frmCompanyFind.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DiariesManager\frmCompanyFind.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiariesManager\frmCreateAppointment.Designer.vb">
+      <DependentUpon>frmCreateAppointment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DiariesManager\frmCreateAppointment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiariesManager\frmDiariesManager.Designer.vb">
+      <DependentUpon>frmDiariesManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DiariesManager\frmDiariesManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiariesManager\frmDMManualCreate.Designer.vb">
+      <DependentUpon>frmDMManualCreate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DiariesManager\frmDMManualCreate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiariesManager\frmPostcodeAssignArea.Designer.vb">
+      <DependentUpon>frmPostcodeAssignArea.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DiariesManager\frmPostcodeAssignArea.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddAppointmentNote.Designer.vb">
+      <DependentUpon>FrmAddAppointmentNote.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddAppointmentNote.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddSale.Designer.vb">
+      <DependentUpon>FrmAddSale.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddSale.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAppoinmentDetail.designer.vb">
+      <DependentUpon>frmAppoinmentDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmAppoinmentDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckProviderManager.Designer.vb">
+      <DependentUpon>frmCheckProviderManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheckProviderManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDailyStats.Designer.vb">
+      <DependentUpon>frmDailyStats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDailyStats.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDiary.designer.vb">
+      <DependentUpon>FrmDiary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDiary.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCheckNumber.Designer.vb">
+      <DependentUpon>FrmCheckNumber.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCheckNumber.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDiaryDialog.Designer.vb">
+      <DependentUpon>frmDiaryDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmDiaryDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStatsDrillDown.Designer.vb">
+      <DependentUpon>frmStatsDrillDown.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmStatsDrillDown.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LegacyImport\frmLegacyImport.Designer.vb">
+      <DependentUpon>frmLegacyImport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LegacyImport\frmLegacyImport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Management Console.Designer.vb">
+      <DependentUpon>Management Console.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Management Console.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Reports\frmCallTimeExceeded.Designer.vb">
+      <DependentUpon>frmCallTimeExceeded.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmCallTimeExceeded.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmCheckCallbacks.Designer.vb">
+      <DependentUpon>frmCheckCallbacks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmCheckCallbacks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmCheckCallbacks2.Designer.vb">
+      <DependentUpon>frmCheckCallbacks2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmCheckCallbacks2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FrmCompaniesAgentsToReps.Designer.vb">
+      <DependentUpon>FrmCompaniesAgentsToReps.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FrmCompaniesAgentsToReps.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FrmCompaniesRepToAgent.designer.vb">
+      <DependentUpon>FrmCompaniesRepToAgent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FrmCompaniesRepToAgent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmDatabaseStats.Designer.vb">
+      <DependentUpon>frmDatabaseStats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmDatabaseStats.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmFixWasinssured.Designer.vb">
+      <DependentUpon>frmFixWasinssured.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmFixWasinssured.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmImportStats.designer.vb">
+      <DependentUpon>frmImportStats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmImportStats.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmOfficePerformance.Designer.vb">
+      <DependentUpon>frmOfficePerformance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmOfficePerformance.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmOrphanedPostcodes.Designer.vb">
+      <DependentUpon>frmOrphanedPostcodes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmOrphanedPostcodes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmReportStandardLife.Designer.vb">
+      <DependentUpon>frmReportStandardLife.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmReportStandardLife.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmRepPerformanceStats.designer.vb">
+      <DependentUpon>frmRepPerformanceStats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmRepPerformanceStats.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmTodaysCallbacksByAgent.Designer.vb">
+      <DependentUpon>frmTodaysCallbacksByAgent.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmTodaysCallbacksByAgent.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmYearsCallbacks.designer.vb">
+      <DependentUpon>frmYearsCallbacks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmYearsCallbacks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\frmPerformanceNew.Designer.vb">
+      <DependentUpon>frmPerformanceNew.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\frmPerformanceNew.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\UserManager\frmChangePassword.Designer.vb">
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\UserManager\frmChangePassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FrmRepToCompany.Designer.vb">
+      <DependentUpon>FrmRepToCompany.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FrmRepToCompany.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\UserManager\frmSelectAreasForRep.Designer.vb">
+      <DependentUpon>frmSelectAreasForRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\UserManager\frmSelectAreasForRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\UserManager\frmSelectUsers.Designer.vb">
+      <DependentUpon>frmSelectUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\UserManager\frmSelectUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings\UserManager\frmUserManager.Designer.vb">
+      <DependentUpon>frmUserManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings\UserManager\frmUserManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\FrmUserStats.Designer.vb">
+      <DependentUpon>FrmUserStats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\FrmUserStats.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Areas\frmAreas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAreas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ctlManagerDiaryCell.resx">
+      <DependentUpon>ctlManagerDiaryCell.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataImport2\frmImportTPS.resx">
+      <DependentUpon>frmImportTPS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataImport2\frmNewData.resx">
+      <DependentUpon>frmNewData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddFile.resx">
+      <DependentUpon>frmAddFile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangeGroupCompany.resx">
+      <DependentUpon>frmChangeGroupCompany.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDocuments.resx">
+      <DependentUpon>frmDocuments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFixPostcodes.resx">
+      <DependentUpon>frmFixPostcodes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGetConsent.resx">
+      <DependentUpon>frmGetConsent.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportHistory.resx">
+      <DependentUpon>frmImportHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSearch2.resx">
+      <DependentUpon>frmSearch2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetEmailPassword.resx">
+      <DependentUpon>FrmSetEmailPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoPoints\frmInformationPoints.resx">
+      <DependentUpon>frmInformationPoints.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageBook\frmBook.resx">
+      <DependentUpon>frmBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmCallbackStats.resx">
+      <DependentUpon>frmCallbackStats.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmCancelledReport.resx">
+      <DependentUpon>frmCancelledReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRecordAllocation.resx">
+      <DependentUpon>frmRecordAllocation.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmSurveySummary.resx">
+      <DependentUpon>frmSurveySummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\frmManageProvierList.resx">
+      <DependentUpon>frmManageProvierList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ctlEventsDayView.resx">
+      <DependentUpon>ctlEventsDayView.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangeAddress.resx">
+      <DependentUpon>frmChangeAddress.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckNotinterested.resx">
+      <DependentUpon>frmCheckNotinterested.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfirmPostcode.resx">
+      <DependentUpon>frmConfirmPostcode.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGetPostcode.resx">
+      <DependentUpon>frmGetPostcode.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\frmLocationFixer.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLocationFixer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMultiRepDiaryEntry.resx">
+      <DependentUpon>frmMultiRepDiaryEntry.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyImport\frmCheckImport.resx">
+      <DependentUpon>frmCheckImport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="Reports\frmAgentApps.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAgentApps.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmAgentPerformance.resx">
+      <DependentUpon>frmAgentPerformance.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmAgentStatsTimeFrame.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAgentStatsTimeFrame.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAgentWatcher.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAgentWatcher.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSelectUser.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSelectUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShowCompany.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmShowCompany.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmAgenttoCompanyStats.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmAgenttoCompanyStats.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmAgentActivity.resx">
+      <DependentUpon>frmAgentActivity.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FrmAreaStats.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAreaStats.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Areas\frmNewArea.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmNewArea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Areas\frmNewPostcode.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmNewPostcode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataImport\frmCompanyImport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCompanyImport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataImport\frmEditImport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmEditImport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeskControls\DeskRowControl.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DeskRowControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Desks\frmDeskManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDeskManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiariesManager\DiaryListItem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DiaryListItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiariesManager\DiaryListView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>DiaryListView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiariesManager\frmCompanyCreate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCompanyCreate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiariesManager\frmCompanyFind.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCompanyFind.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiariesManager\frmCreateAppointment.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCreateAppointment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiariesManager\frmDiariesManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDiariesManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiariesManager\frmDMManualCreate.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDMManualCreate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiariesManager\frmPostcodeAssignArea.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmPostcodeAssignArea.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddAppointmentNote.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAddAppointmentNote.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddSale.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmAddSale.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAppoinmentDetail.resx">
+      <DependentUpon>frmAppoinmentDetail.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckProviderManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCheckProviderManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDailyStats.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDailyStats.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDiary.resx">
+      <DependentUpon>FrmDiary.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCheckNumber.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmCheckNumber.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDiaryDialog.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDiaryDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStatsDrillDown.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmStatsDrillDown.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LegacyImport\frmLegacyImport.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLegacyImport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Management Console.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Management Console.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmCallTimeExceeded.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCallTimeExceeded.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmCheckCallbacks.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmCheckCallbacks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmCheckCallbacks2.resx">
+      <DependentUpon>frmCheckCallbacks2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FrmCompaniesAgentsToReps.resx">
+      <DependentUpon>FrmCompaniesAgentsToReps.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FrmCompaniesRepToAgent.resx">
+      <DependentUpon>FrmCompaniesRepToAgent.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmDatabaseStats.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDatabaseStats.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmFixWasinssured.resx">
+      <DependentUpon>frmFixWasinssured.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmImportStats.resx">
+      <DependentUpon>frmImportStats.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmOfficePerformance.resx">
+      <DependentUpon>frmOfficePerformance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmOrphanedPostcodes.resx">
+      <DependentUpon>frmOrphanedPostcodes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmReportStandardLife.resx">
+      <DependentUpon>frmReportStandardLife.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmRepPerformanceStats.resx">
+      <DependentUpon>frmRepPerformanceStats.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmTodaysCallbacksByAgent.resx">
+      <DependentUpon>frmTodaysCallbacksByAgent.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmYearsCallbacks.resx">
+      <DependentUpon>frmYearsCallbacks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\frmPerformanceNew.resx">
+      <DependentUpon>frmPerformanceNew.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\UserManager\frmChangePassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmChangePassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FrmRepToCompany.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmRepToCompany.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\UserManager\frmSelectAreasForRep.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSelectAreasForRep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\UserManager\frmSelectUsers.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmSelectUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings\UserManager\frmUserManager.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmUserManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\FrmUserStats.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FrmUserStats.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\AppointmentStatsNewHeader.datasource" />
+    <None Include="My Project\DataSources\CallRecorder.Recording.datasource" />
+    <None Include="My Project\DataSources\cCallbackStats.datasource" />
+    <None Include="My Project\DataSources\PostcodeFix.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.1.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express Edition</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\surveys-icon.png" />
+    <None Include="Resources\money.bmp" />
+    <None Include="Resources\Users.bmp" />
+    <None Include="CallQueues.snk" />
+    <None Include="Classes\ClassDiagram1.cd" />
+    <None Include="Images\reports.gif" />
+    <None Include="Images\boxes.gif" />
+    <None Include="Images\balls.gif" />
+    <None Include="Images\import.gif" />
+    <None Include="Images\Diaries.gif" />
+    <None Include="Images\bulb.gif" />
+    <None Include="DiariesManager\RightArrow.bmp" />
+    <None Include="DiariesManager\LeftArrow.bmp" />
+    <None Include="Images\Fax.gif" />
+    <None Include="Images\close.gif" />
+    <None Include="Images\Save.png" />
+    <None Include="Images\Call.gif" />
+    <None Include="Images\note.gif" />
+    <Content Include="logo.ico" />
+    <Content Include="MainIcon.ico" />
+    <None Include="Resources\close.bmp" />
+    <None Include="Settings\UserManager\users.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.vbproj">
+      <Project>{ca9ba1ee-01a5-4a1d-83b5-935a2dba9925}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="CallsRecording\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

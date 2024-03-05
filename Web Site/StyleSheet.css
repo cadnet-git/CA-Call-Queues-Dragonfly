@@ -1,0 +1,293 @@
+﻿    body 
+{
+	
+	background-color:#F2F2F2;
+	background-image:url(images/background.gif);
+	background-repeat:repeat-x;
+	
+	font-family:Arial,sans-serif;
+	margin:0px;
+
+}
+
+@media print {
+    .DontPrint {
+      display: none;
+      }
+     Body 
+     {
+		background-color:White;
+		background-image:url(images/pixel.gif);		
+     }
+    }
+    
+    
+    
+
+
+.Content
+{
+	vertical-align:top;
+	height: 250px; 
+	border:solid 1px;
+	background-color:White;
+}
+
+
+
+    
+    
+.Sidebar
+{
+	background-color:White;
+	padding: 5px 5px 5px 5px;
+	height: 240px; 
+	width: 210px;
+	border:solid 1px;
+	vertical-align:top;
+}
+
+    
+    
+    
+.Logo
+{	
+	color:Red;
+	text-align:left;
+	font-size:14px;
+
+}
+
+
+
+.HeaderLogo
+{
+	text-align:left;
+	white-space:nowrap;
+}
+.HeaderTitle
+{
+	text-align:left;
+	text-align:left;
+	font-size:larger;
+	width:65%;
+	white-space:nowrap;
+}
+.HeaderAction
+{
+	text-align:left;
+	white-space:nowrap;
+}
+        
+        
+        
+.AppDetailTitle
+{
+	background-color:#eeeeee;
+	width: 100px;
+	font-weight:bold;
+	text-align:left;
+	font-size:small;
+	vertical-align:top;
+	padding:2px;
+}
+.AppDetailData {
+	text-align: left;
+	font-size: small;
+	vertical-align: top;
+	padding: 2px;
+}       
+        
+
+.AppNoteTitle
+{
+	background-color:#eeeeee;
+	font-weight:bold;
+	text-align:left;
+	font-size:small;
+	vertical-align:top;
+}
+ .AppNoteData
+{
+	text-align:left;
+	font-size:small;
+	vertical-align:top;
+} 
+
+
+.NoFeedbackTitle
+{
+	font-weight:bold;
+	text-align:left;
+	font-size:small;
+	vertical-align:middle;
+}
+
+.NoFeedbackItemTitle
+{
+	background-color:#eeeeee;
+	font-weight:bold;
+	text-align:left;
+	font-size:small;
+	vertical-align:middle;
+}
+ .NoFeedbackItemData
+{
+	text-align:left;
+	font-size:small;
+	vertical-align:middle;
+} 
+
+
+
+/* rounded corner stuff */
+.liquid-round 
+{
+      width:100%;
+      margin:0px auto;
+      background:#fff url(images/leftside.gif) repeat-y left top;
+}
+.top 
+{
+      width:100%;
+      height:20px;
+      background:url(images/top.gif) no-repeat left top;
+}
+.top span 
+{
+      display:block;
+      position:relative;
+      height:20px;
+      background:url(images/top-right.gif) no-repeat right top;
+}
+.center-content 
+{
+	position:relative;
+	background: url(images/rightside.gif) repeat-y right top;
+	padding:1px 20px 1px 25px;
+	margin:-1px 0 -50px 0;
+}
+.bottom 
+{
+	height:60px;
+	background:url(images/bottom.gif) no-repeat left bottom;
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 00px 0px;
+}
+.bottom span {
+	display:block;
+	position:relative;
+	height:60px;
+	background:url(images/bottom-right.gif) no-repeat right top;
+}
+
+/* end of rounded corner stuff */
+
+
+
+
+
+/* styles of the different types of appointments */
+.AppointmentCA
+{
+	background-color:#FFFFCC;
+}
+.AppointmentRep
+{
+	background-color:#CCFFCC;
+}
+.AppointmentGeneral
+{
+	background-color:#99CCFF;
+}
+
+
+/* end of styles of the different types of appointments */
+
+
+
+
+
+
+.AppointmentDetailContainer
+{
+	border: solid 1px #eeeeee;
+	padding:10px;
+	margin:10px;
+}
+
+
+.WarnClosed
+{
+	background-color:orange;
+}
+
+.WarnTraining
+{
+		background-color:orange;
+		text-align:center;
+	font-size:larger;	
+}
+
+
+
+.RowHighlight
+{
+	background-color:#f8f8f8;
+    height:40px;
+    padding:5px;
+    margin:5px;
+}
+
+
+.Row
+{
+	background-color: White;
+    height:40px;
+    padding:5px;
+    margin:5px;
+}
+
+.Clickable
+{
+	cursor:pointer;
+}
+
+
+.CellLink
+{
+	color:Gray;
+	text-decoration:none;
+}
+
+
+
+input.FlatButton
+{
+	margin: 5px;
+    padding:5px;
+   border-style:solid;
+   width:180px; 
+   font-size:smaller;
+   cursor: pointer;
+   border-width:1px;
+   background-color:#FFFFFF;
+
+   font-size:11px;
+   font-family:Tahoma,sans-serif;
+
+   background-color:#CCDDCC;
+   border-top-style:solid;
+   border-top-color:#99AA99;
+   border-top-width:2px;
+   border-bottom-style:solid;
+   border-bottom-color:#99AA99;
+   border-bottom-width:2px;
+   border-left-style:solid;
+   border-left-color:#BBCCBB;
+   border-left-width:2px;
+   border-right-style:solid;
+   border-right-color:#BBCCBB;
+   border-right-width:2px;
+}
+

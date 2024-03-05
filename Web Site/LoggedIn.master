@@ -1,0 +1,148 @@
+<%@ Master Language="VB" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server"> 
+
+
+    Dim sLogError As String = ""
+    'Protected Sub Calendar1_SelectionChanged(ByVal sender As Object, ByVal e As EventArgs)
+    '    Response.Redirect("default.aspx?DateToShow=" & Me.Calendar1.SelectedDate.ToLongDateString)
+    'End Sub
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
+        Dim DateToShow As Date = Date.Today.Date
+
+        Try
+            DateToShow = CDate(Request("DateToShow"))
+        Catch ex As Exception
+
+        End Try
+
+        'Me.Calendar1.SelectedDate = DateToShow
+        'Me.Calendar1.VisibleDate = DateToShow
+
+        Dim sSQL As String = "insert into WebLog (Username, URL) VALUES ('" & My.User.Name & "','" & Request.Url.ToString & "')"
+
+        Dim DB As New CADNet.CallQueues.Common.DataLayer
+        Try
+            DB.ExecuteSQL(sSQL)
+        Catch ex As Exception
+            sLogError = ex.Message
+        End Try
+
+
+
+    End Sub
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Call Queues Diary</title>
+
+    <link href="/content/jquery-ui-1.8.18.custom.css" rel="stylesheet" type="text/css" />
+    <script src="/Scripts/jquery-1.7.1.min.js" type="text/javascript"></script>
+    <script src="/Scripts/jquery-ui-1.8.18.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="/s/DiaryCell.css" />
+    <link rel="stylesheet" type="text/css" href="/StyleSheet.css" />
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+
+        <% If slogerror.length > 0 Then%>
+        <h1>Error while logging: <%=sLogError %></h1>
+
+        <% end if %>
+
+
+
+        <div class="liquid-round DontPrint">
+
+            <div class="center-content">
+                <!-- CONTENT BEGIN -->
+
+                <table width="100%">
+                    <tr>
+                        <td class="HeaderLogo">
+                            <img border="0" src="/images/logo.gif" align="middle" />Call Queues</td>
+                        <td class="HeaderTitle">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                                Page Title
+                            </asp:ContentPlaceHolder>
+                        </td>
+                        <td class="HeaderAction"></td>
+                    </tr>
+                </table>
+
+                <!-- CONTENT END -->
+
+            </div>
+            <div class="bottom"><span></span></div>
+        </div>
+
+
+
+        <table width="100%" style="font-size: 12px">
+
+
+            <tr>
+                <td class="Sidebar DontPrint">
+                    <div id="datepicker" ></div>
+                   <br />
+                   <%-- <asp:Calendar ID="Calendar1" runat="server" OnSelectionChanged="Calendar1_SelectionChanged" Width="200px" SelectionMode="DayWeek" Font-Size="Small" Font-Underline="False">
+                        <TodayDayStyle Font-Names="Arial" Font-Underline="False" />
+                        <DayStyle Font-Names="Arial" Font-Underline="False" />
+
+                        <DayHeaderStyle Font-Names="arial" Font-Size="Small" />
+                        <TitleStyle BorderColor="#EEEEEE" Font-Names="arial" Font-Size="Small" Font-Underline="False" />
+                        <NextPrevStyle Font-Underline="False" />
+                    </asp:Calendar>
+
+                    &nbsp;&nbsp;<br />--%>
+
+                    <input class="ui-button" style="width: 90%;margin:10px;" onclick="javascript: window.location = '/s/default.aspx'" type="button" value="This Week" />
+
+                    <input class="ui-button" style="width: 90%;margin:10px;" onclick="javascript: window.location = '/s/feedback/AppointmentsNeedingFeedback.aspx'" type="button" value="Apps Needing Feedback" id="Button1" />
+
+                    <input class="ui-button" style="width: 90%;margin:10px;" onclick="javascript: window.location = '/s/PendingAppointments.aspx'" type="button" value="Active Appointments" />
+                    <% If My.User.Name = "clive" Then%>
+                    <input class="ui-button" style="width: 90%;margin:10px;" onclick="javascript: window.location = '/s/admin/SelectDiary.aspx'" type="button" value="Change Diary" />
+
+
+                    <% End If%>
+                    <br />
+                    <br />
+                    <div style="font-size: 14px; text-align: center;"><% Response.Write(Session("RealName"))%></div>
+                </td>
+                <td class="Content" colspan="2">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        Content
+                    </asp:ContentPlaceHolder>
+                    <br />
+                </td>
+            </tr>
+        </table>
+        <div align="center">
+            <h1>&nbsp;</h1>
+        </div>
+
+    </form>
+    <script type="text/javascript">
+        $(function () {
+            $("#datepicker").datepicker({
+                onSelect: function (dateText, inst) {
+                    var url = "/s/default.aspx?DateToShow=" + dateText;
+                    window.location = url;
+                }
+            });
+            $("#datepicker").datepicker("option", "dateFormat", "d MM y");
+            var d = new Date(masterhf.Get('date'));
+            $("#datepicker").datepicker("setDate", d);
+
+        });
+    </script>
+</body>
+</html>

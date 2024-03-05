@@ -1,0 +1,56 @@
+<%@ Master Language="VB" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<script runat="server">
+
+</script>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Call Queues Diary</title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    
+   
+    <div class="liquid-round">
+
+    <div class="center-content">
+<!-- CONTENT BEGIN -->
+    
+    <table width="100%">
+    <tr>
+        <td class="HeaderLogo"><img src="images/logo.gif" align="absmiddle" />Call Queues</td>
+        <td class="HeaderTitle"><asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+         Page Title
+         </asp:ContentPlaceHolder></td>
+    </tr>
+    </table>
+
+    <!-- CONTENT END -->    
+
+    </div>
+    <div class="bottom"><span></span></div>
+</div>
+
+
+    <div>
+ 
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+            <br />
+            <br />
+            <asp:LoginView ID="LoginView1" runat="server">
+                <LoggedInTemplate>
+    
+                </LoggedInTemplate>
+                <AnonymousTemplate>
+                    Please Login
+                </AnonymousTemplate>
+            </asp:LoginView>
+        </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>

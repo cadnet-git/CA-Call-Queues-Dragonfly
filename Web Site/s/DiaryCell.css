@@ -1,0 +1,60 @@
+﻿.DiaryView
+{
+    text-align:center;
+border-collapse: collapse;
+ border-spacing: 0;
+}
+.NavCellLeft
+{ 
+	vertical-align:middle;
+	text-align:center;
+	background-color: #eeeeee;
+	border-bottom: silver 1px solid;
+	border-top: none opx;	
+	cursor:pointer;
+}
+.NavCellRight
+{ 
+	vertical-align:middle;
+	text-align:center;
+	background-color: #eeeeee;
+	border-top: none 0px;
+	border-right: silver 1px solid;
+	border-bottom: silver 1px solid;	
+	cursor:pointer;
+}
+
+.DayofWeekCell
+{
+	font-weight:normal;
+	vertical-align:middle;
+	text-align:center;
+	background-color:#eeeeee;
+	color:black;
+	border-top: none 0px;
+	border-left: silver 1px solid;
+	border-right: silver 1px solid;	
+}
+
+.DateCell
+{
+	vertical-align:middle;
+	text-align:center;
+	background-color:#eeeeee;
+	color:black;
+	border-left: silver 1px solid;
+	border-right: silver 1px solid;
+	border-bottom: silver 1px solid;	
+}
+.AppointmentCell
+{
+	vertical-align:middle;
+	background-color: White;
+	border-right: silver 1px solid;
+	border-top: silver 1px solid;
+	border-left: silver 1px solid;
+	border-bottom: silver 1px solid;
+font-size: small
+}
+
+
